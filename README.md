@@ -8,4 +8,4 @@ A Zabbix Template and UserParameter scripts to get sensor information from OpenH
 
 ## Support
 
- - None. I will not help you troubleshoot WMI. I had issues with WMI, which required me to update to OpenHardwareMonitor to v0.8.0.3, however that may just have been a case of Error: ID10T.
+ - None. I will not help you troubleshoot WMI. I had issues with WMI, which required me to update OpenHardwareMonitor to v0.8.0.3, however that may just have been a case of Error: ID10T.
