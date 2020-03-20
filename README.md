@@ -5,8 +5,8 @@ A Zabbix Template and UserParameter scripts to get sensor information from OpenH
 
  - Copy the contents of `/bin` to the location your Zabbix Agent will be reading UserParameter scripts from.
  - Set the user parameters in your Zabbix Agent configuration file. Use this structure (zabbix\bin to replace by the location where you but the scripts: 
-   - UserParameter=ohm_disco,powershell.exe -Noprofile -ExecutionPolicy Bypass -file c:\zabbix\bin\ohm_disco.ps1
-   - UserParameter=omh_get[*],powershell.exe -Noprofile -ExecutionPolicy Bypass -file c:\zabbix\bin\ohm_get.ps1
+   - UserParameter=ohm_disco,powershell -Noprofile -ExecutionPolicy Bypass -File "c:\zabbix\bin\ohm_disco.ps1"
+   - UserParameter=ohm_capture[*],powershell -Noprofile -ExecutionPolicy Bypass -File "c:\zabbix\bin\ohm_get.ps1" $1
  - Import the template in `/template` to your Zabbix Server instance, and assign it to a host running OpenHardwareMonitor that has WMI accessible.
 
 ## Support
